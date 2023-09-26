@@ -57,9 +57,9 @@ const Home = () => {
           <Slide/>   
           <Objetives />
           <div className="serviciosContenedor">
-            <ServiceLink icon={lapiz} content={locale == 'es-ES' ? 'Diseño de Logotipo' : 'Logo Design'} url={'/services'} />
-            <ServiceLink icon={idea} content={locale == 'es-ES' ? 'Diseño de Contenido' : 'Content Design'} url={'/services'} />
-            <ServiceLink icon={like} content={locale == 'es-ES' ? 'Gestión de redes' : 'Network Management'} url={'/services'} />
+            <ServiceLink icon={lapiz} content={locale === 'en-US' ? 'Logo Design' : 'Diseño de Logotipo'} url={'/services'} />
+            <ServiceLink icon={idea} content={locale === 'en-US' ? 'Content Design' : 'Diseño de Contenido'} url={'/services'} />
+            <ServiceLink icon={like} content={locale === 'en-US' ? 'Network Management' : 'Gestión de redes'} url={'/services'} />
           </div>
           <div className="cartel">
             <span>

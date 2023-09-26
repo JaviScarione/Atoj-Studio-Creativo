@@ -29,7 +29,7 @@ const Shop = () => {
     {descargablesGratis.map((descargable) => (
       <article className="descargable" key={descargable.id}>
         <img src={descargable.img} alt={descargable.title} />
-        <h3>{locale == 'es-ES' ? descargable.title : descargable.enTitle}</h3>
+        <h3>{locale === 'en-US' ? descargable.enTitle : descargable.title}</h3>
         <Link to={`/descargable/${descargable.id}`} className="descargar">
         <FormattedMessage id='shop.descargar' defaultMessage= 'Descargar'/>
         </Link>
@@ -41,7 +41,7 @@ const Shop = () => {
     {descargablesNoGratis.map((descargable) => (
       <article className="descargable" key={descargable.id}>
         <img src={descargable.img} alt={descargable.title} />
-        <h3>{locale == 'es-ES' ? descargable.title : descargable.enTitle}</h3>
+        <h3>{locale === 'en-US' ? descargable.enTitle : descargable.title}</h3>
         <Link className="comprar">
         <FormattedMessage id='shop.comprar' defaultMessage= 'Comprar'/>
         </Link>

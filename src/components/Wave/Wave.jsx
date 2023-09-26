@@ -5,6 +5,7 @@ import { useEffect, useRef, useState, useContext } from 'react';
 import { langContext } from '../../context/langContext';
 
 
+
 const Wave = () => {
 
   const elementRefs = useRef([]);
@@ -55,7 +56,7 @@ const Wave = () => {
             <div className={`child2 ${isVisible[0] ? 'wave-animation' : ''}`} ref={(el) => (elementRefs.current[0] = el)}></div>
           </div>
         </div>
-        <Porcentaje porcentaje={100} titulo={locale == 'es-ES' ? 'Clientes Felices' : 'Happy Customers'}/>
+        <Porcentaje porcentaje={100} titulo={locale === 'en-US' ? 'Happy Customers' : 'Clientes Felices'}/>
       </div> 
       <div className="individualCircle">
         <div className='circle' >
@@ -64,7 +65,7 @@ const Wave = () => {
             <div className={`child2 ${isVisible[1] ? 'wave-animation' : ''}`} ref={(el) => (elementRefs.current[1] = el)}></div>
           </div>
         </div>
-        <Porcentaje porcentaje={100} titulo={locale == 'es-ES' ? 'Marcas Mejoradas' : 'Improved Brands'}/>
+        <Porcentaje porcentaje={100} titulo={locale === 'en-US' ? 'Improved Brands' : 'Marcas Mejoradas'}/>
       </div>
 
 {/* 75 */}
@@ -75,7 +76,7 @@ const Wave = () => {
             <div className={`child4 ${isVisible[2] ? 'wave2-animation' : ''}`} ref={(el) => (elementRefs.current[2] = el)}></div>
           </div>
         </div>
-        <Porcentaje porcentaje={75} titulo={locale == 'es-ES' ? 'Tiempo Sin Dormir' : 'Time Without Sleep'}/>
+        <Porcentaje porcentaje={75} titulo={locale === 'en-US' ? 'Time Without Sleep' : 'Tiempo Sin Dormir'}/>
       </div>
       
     </div>
